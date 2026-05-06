@@ -1,0 +1,35 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "description": "OIDC-compatible authentication server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "naveen pnk",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.3"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "joi": "^17.13.3",
+    "mongoose": "^8.13.2",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.7.0",
+    "oidc-provider": "^9.8.2",
+    "otplib": "^12.0.1",
+    "qrcode-terminal": "^0.12.0",
+    "tough-cookie": "^6.0.1"
+  }
+}
