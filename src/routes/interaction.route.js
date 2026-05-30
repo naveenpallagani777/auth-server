@@ -60,6 +60,30 @@ const buildInteractionRoutes = (provider) => {
     router.post("/:uid/signup", interactionController.postSignup);
 
     /**
+     * GET /interaction/:uid/forgot-password
+     * Render the forgot password page
+     */
+    router.get("/:uid/forgot-password", interactionController.getForgotPassword);
+
+    /**
+     * POST /interaction/:uid/forgot-password
+     * Process the forgot password request
+     */
+    router.post("/:uid/forgot-password", interactionController.postForgotPassword);
+
+    /**
+     * GET /interaction/:uid/reset-password
+     * Render the reset password page (requires token)
+     */
+    router.get("/:uid/reset-password", interactionController.getResetPassword);
+
+    /**
+     * POST /interaction/:uid/reset-password
+     * Process the reset password request
+     */
+    router.post("/:uid/reset-password", interactionController.postResetPassword);
+
+    /**
      * POST /interaction/:uid/confirm
      * Submit consent to complete the consent interaction
      */

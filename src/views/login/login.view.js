@@ -85,6 +85,9 @@ const renderLoginPage = (uid, options = {}) => {
                 <div id="password-section" class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="••••••••" required autocomplete="current-password" />
+                    <div style="text-align: right; margin-top: 5px;">
+                        <a href="/oauth2/v1/interaction/${uid}/forgot-password" style="font-size: 0.85rem; color: var(--primary-color); text-decoration: none;">Forgot Password?</a>
+                    </div>
                 </div>
             `;
             btnText = "Sign in";
@@ -93,6 +96,9 @@ const renderLoginPage = (uid, options = {}) => {
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="••••••••" required autocomplete="current-password" />
+                    <div style="text-align: right; margin-top: 5px;">
+                        <a href="/oauth2/v1/interaction/${uid}/forgot-password" style="font-size: 0.85rem; color: var(--primary-color); text-decoration: none;">Forgot Password?</a>
+                    </div>
                 </div>
             `;
         } else if (isOTP) {
